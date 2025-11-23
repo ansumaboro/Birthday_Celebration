@@ -39,8 +39,15 @@ body {
     animation-duration: 2s;
 }
 
-.host img {
+.host img, #host-person2 {
     height: 350px;
+}
+
+#host2 {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    display: none;
 }
 
 .button-container {

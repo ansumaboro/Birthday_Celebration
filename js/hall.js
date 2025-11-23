@@ -1,5 +1,6 @@
 const gate = document.getElementById("gate-image")
 const host_person = document.getElementById("host-person")
+const host_person2 = document.getElementById("host2")
 const waveBtn = document.getElementById("wave")
 const enterBtn = document.getElementById("enter")
 const hand = document.getElementById("hand-wave")
@@ -35,6 +36,7 @@ waveBtn.onclick = ()=>{
             gate.src = "images/opened_gate.jpg";
             host_person.style.marginLeft = "30px"
             host_person.src = "images/welcome.webp"
+            host_person2.style.display = "block"
 
             setTimeout(() => {
                 enterBtn.style.display = "block";
@@ -69,7 +71,7 @@ function animateWalking() {
 
     for(i=0; i<10; i++){
         setTimeout(()=>{
-            console.log("walking")
+            // console.log("walking")
             bottom += 10
             girl.style.bottom = bottom + "px" 
     
