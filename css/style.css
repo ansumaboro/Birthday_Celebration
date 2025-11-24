@@ -10,6 +10,7 @@ body {
 .container {
     width: 100vw;
     height: 98vh;
+    overflow: hidden;
     /* position: relative; */
 }
 

@@ -11,9 +11,9 @@ body {
 .container {
     height: 96vh;
     width: 70vw;
-    /* border: 2px solid black; */
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 #people {
@@ -58,6 +58,28 @@ body {
     left: 90%;
 }
 
+/* Wishes.... */
+
+#wish {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 97vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+    display: none;
+}
+
+#wish-person{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+}
+
+
 #cake-table {
     z-index: 99;
     position: absolute;
@@ -96,4 +118,14 @@ body {
     background-color: rgb(243, 9, 243);
     scale: 1.02;
     animation: none;
+}
+
+
+#cover {
+    position: absolute;
+    background-color: black;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: none;
 }
