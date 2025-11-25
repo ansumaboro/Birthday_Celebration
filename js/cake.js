@@ -137,6 +137,7 @@ Array.from(people).forEach(person =>{
                     console.log("Hello");
                     feedCount[persons[i]]++;
                     animateEatPersonIn()
+                    break;
                 }
             }
         }
