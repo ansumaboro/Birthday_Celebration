@@ -116,6 +116,7 @@ body {
     transform: translateX(-50%);
     backdrop-filter: blur(1px);
     display: none;
+    scale: 0;
 }
 
 @keyframes note {

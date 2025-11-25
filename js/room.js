@@ -18,7 +18,9 @@ async function changeWishPerson(){
     }
     wishPerson.src = "images/friends/wishes/"+persons[count]+".webp"
     count++;
-    animateWishIn();
+    setTimeout(()=>{
+        animateWishIn();
+    },500)
     setTimeout(() => {
         thankBtn.style.display = "block"
     }, 1000);

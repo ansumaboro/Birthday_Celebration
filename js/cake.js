@@ -91,15 +91,17 @@ async function animateKnife(){
 }
 
 async function animateEatPersonIn(){
-    eatPerson.style.display = "block"
-    let scale = 0
-    while(scale<1){
-        scale += 0.05
-        eatPerson.style.scale = scale
-
-        await new Promise(resolve => setTimeout(resolve, 5))
-    }
-    feedBtn.style.display = "block";
+    setTimeout(async () => {
+        eatPerson.style.display = "block"
+        let scale = 0
+        while(scale<1){
+            scale += 0.05
+            eatPerson.style.scale = scale
+    
+            await new Promise(resolve => setTimeout(resolve, 5))
+        }
+        feedBtn.style.display = "block";
+    }, 500);
 }
 
 async function animateEatPersonOut(){
@@ -132,7 +134,7 @@ Array.from(people).forEach(person =>{
             for(i=0; i<7; i++){
                 if(e.target.src.includes(persons[i])){
                     eatPerson.src = "images/friends/feed/"+persons[i]+".png"
-                    feedCount[persons[i]]++
+                    feedCount[persons[i]]++;
                     animateEatPersonIn()
                 }
             }
