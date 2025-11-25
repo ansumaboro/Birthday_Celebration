@@ -136,6 +136,7 @@ Array.from(people).forEach(person =>{
                     eatPerson.src = "images/friends/feed/"+persons[i]+".png"
                     feedCount[persons[i]]++;
                     animateEatPersonIn()
+                    break;
                 }
             }
         }
