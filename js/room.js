@@ -6,12 +6,12 @@ const wishPerson = document.getElementById("wish-person")
 const wishPersonBg = document.getElementById("wish")
 const thankBtn = document.getElementById("thnkyou")
 
-persons = ["bishakha", "mainu", "talukdar", "sogun", "ansuma"]
+persons = ["bishakha", "mainu", "talukdar", "sogun", "sneha", "ansuma"]
 count = 0;
 
 async function changeWishPerson(){
     await animateWishOut();
-    if(count >= 5){
+    if(count >= 6){
         wishPersonBg.style.display = "none";
         cakeAnimation();
         return;
