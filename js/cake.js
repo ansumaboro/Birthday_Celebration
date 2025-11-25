@@ -134,6 +134,7 @@ Array.from(people).forEach(person =>{
             for(i=0; i<7; i++){
                 if(e.target.src.includes(persons[i])){
                     eatPerson.src = "images/friends/feed/"+persons[i]+".png"
+                    console.log(eatPerson.src);
                     feedCount[persons[i]]++;
                     animateEatPersonIn()
                 }
